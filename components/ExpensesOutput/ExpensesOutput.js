@@ -3,10 +3,10 @@ import { View } from "react-native";
 import { ExpensesSummary } from "./ExpensesSummary";
 import { ExpensesList } from "./ExpensesList";
 
-export const ExpensesOutput = ({ expenses }) => {
+export const ExpensesOutput = ({ expenses, expensesPerioud }) => {
   return (
     <View>
-      <ExpensesSummary />
+      <ExpensesSummary expenses={expenses} preiodName={expensesPerioud} />
       <ExpensesList />
     </View>
   );
