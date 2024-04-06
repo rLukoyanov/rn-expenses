@@ -1,8 +1,7 @@
-import React from 'react'
-import { Text } from 'react-native'
+import React from "react";
+import { Text } from "react-native";
+import { ExpensesOutput } from "../components/ExpensesOutput/ExpensesOutput";
 
 export const AllExpenses = () => {
-  return (
-    <Text>AllExpenses</Text>
-  )
-}
+  return <ExpensesOutput expensesPerioud="Total" />;
+};
