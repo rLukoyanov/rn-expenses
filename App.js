@@ -68,7 +68,7 @@ export default function App() {
     <>
       <ExpensesContextProvider>
         <NavigationContainer>
-          <StatusBar style="auto" />
+          <StatusBar style="light" />
           <Stack.Navigator
             screenOptions={{
               headerStyle: {
