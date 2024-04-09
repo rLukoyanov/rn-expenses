@@ -14,9 +14,15 @@ export const ManageExpense = ({ route, navigation }) => {
     });
   }, [navigation, isEditing]);
 
-  function deleteExpenseHandler(params) {}
-  function cancelHandler(params) {}
-  function confitmHandler(params) {}
+  function deleteExpenseHandler(params) {
+    navigation.goBack();
+  }
+  function cancelHandler(params) {
+    navigation.goBack();
+  }
+  function confitmHandler(params) {
+    navigation.goBack();
+  }
 
   return (
     <View style={styles.container}>
